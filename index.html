@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery.marquee.min.js"></script>
+    <script src="./js/index.js" defer></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Accueil-Ekea</title>
+</head>
+
+<body>
+    <!-- début hedear----------------------------------->
+    <header>
+
+
+        <div class="nav">
+            <!-- The overlay -->
+            <div id="myNav" class="overlay">
+
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                    <nav>
+                        <ul>
+                            <li><a href="./index.html">Accueil</a></li>
+                            <li><a href="./html/nos_inspirations.html">Inspirations</a></li>
+                            <li><a href="./html/produits.html">Produits</a></li>
+                            <li><a href="./html/nos_services.html">Nos Services</a></li>
+                            <li><a href="./html/contact.html">Nous Contacter</a></li>
+                        </ul>
+                    </nav>
+                    <div class="icons">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <footer>
+                        <p>&copy; Copyright-Dario & Marti</p>
+                    </footer>
+                </div>
+
+            </div>
+
+            <!-- Use any element to open/show the overlay navigation menu -->
+            <span onclick="openNav()"><img src="./icons/icon/bars-solid.svg" id="navbar"></span>
+            <h1>E-Keo</h1>
+            <img src="./icons/icon/shopify.svg" id="shopify">
+        </div>
+    </header>
+    <main>
+        <!-- création du text défilante en html -->
+        <section class="scroll-Containertxt" id="text-container">
+            <p id="scrolling-text"> -20% en+ dès 99€ d'achat -35% sur les décorations -50% avec le code promo marti</p>
+        </section>
+        <section class="welcome-block">
+            <h2>bienvenue !</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt inventore aliquam, culpa architecto
+                praesentium expedita distinctio similique placeat doloribus
+            </p>
+        </section>
+        <!-- création des 4blocs en dessus de bienvenue -->
+        <section class="blockpub">
+            <div class="blockpub-item inspiration">
+                <p>Nos inspirations</p>
+                <a href="./html/nos_inspirations.html">voir plus</a>
+            </div>
+            <div class="blockpub-item canape">
+
+            </div>
+            <div class="blockpub-item carton">
+            </div>
+            <div class="blockpub-item service">
+                <p>Nos services </p>
+                <a href="./html/contact.html">voir plus</a>
+            </div>
+        </section>
+    </main>
+    <!-- début main----------------------------------->
+    <!-- début footer--------------------------------->
+    <footer>
+        <div>
+            <p class="foot">ekea</p>
+            <a href="/html/contact.html">Nous contacter</a>
+        </div>
+    </footer>
+    <!-- fin  footer----------------------------------->
+</body>
+
+</html>

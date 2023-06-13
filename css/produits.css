@@ -1,0 +1,49 @@
+header {
+    background-image: url("../images/header_produit.jpeg");
+}
+
+
+/* pour redimensionner les images */
+
+.parent {
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+}
+
+.parent img {
+    width: 100%;
+    height: 100%
+}
+
+.disposition {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.middle {
+    text-align:center ;
+padding-top: 30px;
+}
+section> div{
+    text-align: center;
+    margin-top: 50px;
+}
+.filter{
+    border-radius: 10px;
+    height: 30px;
+    width: 250px;
+    text-align: center;
+    background-color:#edede9;
+    border: none;
+}
+/* pour afficher les éléments voulu */
+.show{
+    display: block;
+}
+/* caché tous les éléments */
+.affichetous{
+    display: none;
+
+}

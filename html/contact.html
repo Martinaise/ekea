@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- on ramene le fontawesome aussi -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- on ramene le css et js de la page d'accueil pour reutilisé ici  -->
+    <link rel="stylesheet" href="../css/index.css" />
+    <script src="../js/index.js" defer></script>
+    <!-- le nouveau css et js page contact  -->
+    <link rel="stylesheet" href="../css/contact.css" />
+    <script src="../js/contact.js" defer></script>
+    <title>contacter Nous E-kea</title>
+  </head>
+
+  <body>
+    <!-- début hedear----------------------------------->
+    <header>
+
+
+      <div class="nav">
+          <!-- The overlay -->
+          <div id="myNav" class="overlay">
+
+              <!-- Button to close the overlay navigation -->
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+              <!-- Overlay content -->
+              <div class="overlay-content">
+                  <nav>
+                      <ul>
+                          <li><a href="../index.html">Accueil</a></li>
+                          <li><a href="./nos_inspirations.html">Inspirations</a></li>
+                          <li><a href="./produits.html">Produits</a></li>
+                          <li><a href="./nos_services.html">Nos Services</a></li>
+                          <li><a href="./contact.html">Nous Contacter</a></li>
+                      </ul>
+                  </nav>
+                  <div class="icons">
+                      <i class="fa-brands fa-instagram"></i>
+                      <i class="fa-brands fa-facebook-f"></i>
+                      <i class="fa-brands fa-twitter"></i>
+                  </div>
+                  <footer>
+                      <p>&copy; Copyright-Dario & Marti</p>
+                  </footer>
+              </div>
+
+          </div>
+
+          <!-- Use any element to open/show the overlay navigation menu -->
+          <span onclick="openNav()"><img src="../icons/icon/bars-solid.svg" id="navbar"></span>
+          <h1>E-Keo</h1>
+          <img src="../icons/icon/shopify.svg" id="shopify">
+      </div>
+  </header>
+    <main>
+      <section class="block-gauche">
+        <section class="livraison_contact">
+          <div class="orange">
+            <p>Nos services livraisons</p>
+          </div>
+          <figure class="livraison">
+            <img src="../images/service2.png" alt="fauteil blanc" />
+          </figure>
+        </section>
+        <section class="livraison_contact">
+          <div class="orange">
+            <p>Adresse Téléphone</p>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.4257923648693!2d2.322918376906869!3d48.86915899994807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fada0d2fd2d%3A0xfd95d51b5dff6e43!2sIKEA%20-%20Paris%20La%20Madeleine!5e0!3m2!1sfr!2sfr!4v1686607477996!5m2!1sfr!2sfr"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </section>
+      </section>
+      <section class="block-droit">
+        <form>
+          <h1>Contactez-nous</h1>
+
+          <div class="separation"></div>
+
+          <div class="corps-formulaire">
+            <div class="gauche">
+              <div class="boite">
+                <label>Nom et prénom</label>
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="fistname" placeholder="dario" />
+                <p>Votre nom doit contenier 5- 12 caracters</p>
+              </div>
+
+              <div class="boite">
+                <label for="email">E-mail</label>
+                <i class="fa-solid fa-envelope"></i>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder=" votre email"
+                />
+
+                <!-- regex -->
+                <p>Votre e-mail n'est pas valide ex. assofac@.com</p>
+              </div>
+              <div class="boite">
+                <label>Téléphone</label>
+                <i class="fa-solid fa-mobile"></i>
+                <input
+                  type="text"
+                  name="telephone"
+                  placeholder=" votre télépone"
+                />
+
+                <p>
+                  Votre téléphone n'est pas valide.Il doit contenir 10 chiffres
+                </p>
+              </div>
+            </div>
+
+            <div class="droite">
+              <div class="boite">
+                <label>Message</label>
+                <textarea placeholder="Saisissez ici..."></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="pied-formulaire">
+            <button id="Button_modal" onclick="OpenModal()">
+              Envoyer le message
+            </button>
+          </div>
+          <div class="modal">
+            <h1>Message envoyé</h1>
+            <h3>Nous vous recontacterons prochainement !</h3>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <footer>
+        <div>
+          <p class="foot">ekea</p>
+          <a href="/html/contact.html">Nous contacter</a>
+        </div>
+      </footer>
+    </footer>
+  </body>
+</html>
