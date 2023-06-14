@@ -2,14 +2,46 @@ header {
     background-image: url(../images/img4.jpeg);
 }
 
-.text{
-   width: 1000px;
-   margin: 10px auto 10px auto;
-   padding: 30px;
+.text {
+    width: 1000px;
+    margin: 10px auto 10px auto;
+    padding: 30px;
 }
-h3{
+
+h3 {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
-    
+
+}
+
+
+@media screen and (max-width: 11499px) {
+    .bloc {
+        max-width: 90%px;
+        overflow: hidden
+    }
+
+    .bloc p {
+        font-size: 0, 9em;
+
+
+    }
+
+    header {
+
+width: 100%;
+    pading: 20px;}
+
+    footer {
+        position: absolute;
+    background-color: rgb(255, 255, 255, 0.299);
+    backdrop-filter: blur(4px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    }
 }
