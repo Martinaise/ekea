@@ -1,120 +1,167 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- on ramene le fontawesome aussi -->
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- on ramene le css et js de la page d'accueil pour reutilisé ici  -->
-    <link rel="stylesheet" href="../css/index.css" />
-    <script src="../js/index.js" defer></script>
-    <!-- le nouveau css et js page produit -->
-    <link rel="stylesheet" href="../css/produits.css" />
-    <script src="../js/produits.js" defer></script>
-    <title>produits E-kea</title>
-  </head>
 
-  <body>
-    <!-- début hedear----------------------------------->
-    <header>
-      <div class="nav">
-        <!-- The overlay -->
-        <div id="myNav" class="overlay">
-          <!-- Button to close the overlay navigation -->
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-            >&times;</a
-          >
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- on ramene le fontawesome aussi -->
+  <link type="text/css" rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- on ramene le css et js de la page d'accueil pour reutilisé ici  -->
+  <link rel="stylesheet" href="../css/index.css" />
+  <script src="../js/index.js" defer></script>
+  <!-- le nouveau css et js page produit -->
+  <link rel="stylesheet" href="../css/produits.css" />
+  <script src="../js/produits.js" defer></script>
+  <title>produits E-kea</title>
+</head>
 
-          <!-- Overlay content -->
-          <div class="overlay-content">
-            <nav>
-              <ul>
-                <li><a href="../index.html">Accueil</a></li>
-                <li><a href="./nos_inspirations.html">Inspirations</a></li>
-                <li><a href="./produits.html">Produits</a></li>
-                <li><a href="../html/apropos_de_nous.html">À propos de nous</a></li>
-            <div class="icons">
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-facebook-f"></i>
-              <i class="fa-brands fa-twitter"></i>
-            </div>
-            <footer>
-              <p>&copy; Copyright-Dario & Marti</p>
-            </footer>
-          </div>
+<body>
+  <!-- début hedear----------------------------------->
+  <header>
+    <div class="nav">
+      <!-- The overlay -->
+      <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <nav>
+            <ul>
+              <li><a href="../index.html">Accueil</a></li>
+              <li><a href="./nos_inspirations.html">Inspirations</a></li>
+              <li><a href="./produits.html">Produits</a></li>
+              <li><a href="../html/apropos_de_nous.html">À propos de nous</a></li>
+              <div class="icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <footer>
+                <p>&copy; Copyright-Dario & Marti</p>
+              </footer>
         </div>
-
-        <!-- Use any element to open/show the overlay navigation menu -->
-        <span onclick="openNav()"
-          ><img src="../icons/icon/bars-solid.svg" id="navbar"
-        /></span>
-        <h1>E-Keo</h1>
-        <img src="../icons/icon/shopify.svg" id="shopify" />
       </div>
-    </header>
-    <main>
-      <section>
-        <h2 class="middle">produits</h2>
-        <!-- création de filter HTML -->
-        <div>
-          <!-- onchange permet de selection les éléments  voulu à l'aide la de fonction faite en js -->
-          <select onchange="selectionner()" class="filter" id="choisir">
-            <option disabled>Filtre</option>
-            <option value="Tous" selected="selected">Tous</option>
-            <option value="confort">Confort</option>
-            <option value="surface">Surface</option>
-          </select>
-        </div>
-        <!-- début card -->
-        <section class="disposition">
-          <!-- les classes indivituelles mises dans les div( confort,surface...) permettent d'afficher que l'élément selectionner.  En cliquant sur le bouton confort par exemple les autres  champs sont cachés(surface et decoration)
+
+      <!-- Use any element to open/show the overlay navigation menu -->
+      <span onclick="openNav()"><img src="../icons/icon/bars-solid.svg" id="navbar" /></span>
+      <h1>E-Keo</h1>
+      <img src="../icons/icon/shopify.svg" id="shopify" />
+    </div>
+  </header>
+  <main>
+    <section>
+      <h2 class="middle">produits</h2>
+      <!-- création de filter HTML -->
+      <div>
+        <!-- onchange permet de selection les éléments  voulu à l'aide la de fonction faite en js -->
+        <select onchange="selectionner()" class="filter" id="choisir">
+          <option disabled>Filtre</option>
+          <option value="Tous" selected="selected">Tous</option>
+          <option value="confort">Confort</option>
+          <option value="surface">Surface</option>
+          <option value="decoration">Décoration</option>
+        </select>
+      </div>
+      <!-- début card -->
+      <section class="disposition">
+        <!-- les classes indivituelles mises dans les div( confort,surface...) permettent d'afficher que l'élément selectionner.  En cliquant sur le bouton confort par exemple les autres  champs sont cachés(surface et decoration)
             affichetous cette classes permet d'afficher tous les éléments de ma listedéroulante( surface confort et decoration) -->
-          <div class="confort affichetous">
-            <p>Confort</p>
-            <figure class="parent">
-              <img src="../images/confort_1.jpeg" alt="fauteil blanc" />
-            </figure>
-            <figure class="parent">
-              <img src="../images/confort_2.jpeg" alt="fauteil bleu" />
-            </figure>
-          </div>
-          <div class="surface affichetous">
-            <p>Surface</p>
-            <figure class="parent">
-              <img src="../images/surface-1.jpeg" alt="bureau" />
-            </figure>
-            <figure class="parent">
-              <img src="../images/surface-2.jpeg" alt="bureau" />
-            </figure>
-          </div>
-          <div class="decoration affichetous">
-            <p>Décoration</p>
-            <figure class="parent">
-              <img src="../images/deco-1.jpeg" alt="pot de fleur" />
-            </figure>
-            <figure class="parent">
-              <img src="../images/deco-2.jpeg" alt="miroir" />
-            </figure>
-          </div>
-        </section>
-        <!-- fin card -->
-      </section>
-    </main>
-    <footer>
-      <footer>
-        <div>
-          <p class="foot">ekea</p>
-          <a href="./contact.html">Nous contacter</a>
+        <div class="confort affichetous">
+          <p>Confort</p>
+          <figure id="confort1" class="parent">
+            <img id="myImg1" src="../images/confort_1.jpeg" alt="fauteil blanc" />
+          </figure>
+          <figure id="confort2" class="parent">
+            <img id="myImg2" src="../images/confort_2.jpeg" alt="fauteil bleu" />
+          </figure>
         </div>
-      </footer>
+        <div class="surface affichetous">
+          <p>Surface</p>
+          <figure id="surface1" class="parent">
+            <img id="myImg3" src="../images/surface-1.jpeg" alt="bureau" />
+          </figure>
+          <figure id="surface2" class="parent">
+            <img id="myImg4" src="../images/surface-2.jpeg" alt="bureau" />
+          </figure>
+        </div>
+        <div class="decoration affichetous">
+          <p>Décoration</p>
+          <figure id="decoration1" class="parent">
+            <img id="myImg5" src="../images/deco-1.jpeg" alt="pot de fleur" />
+          </figure>
+          <figure id="decoration2" class="parent">
+            <img id="myImg6" src="../images/deco-2.jpeg" alt="miroir" />
+          </figure>
+        </div>
+      </section>
+      <!-- fin card -->
+    </section>
+    <!-- creation de modal= qunad on click sur l'image elle s'agrandit (zoom-->
+    <section>
+
+      <figure id="confort1Modal" class="modal">
+        <div class="modalcontainer">
+          <div class="modalimg"><img class="modal-content" id="img01"></div>
+          <span class="close">&times;</span>
+          <figcaption class="figcaption">
+            <p>FAUTEUIL</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, beatae! Eveniet, accusamus! Ipsam nisi
+              doloribus ea, deleniti quasi dignissimos praesentium accusamus qui ut quis consectetur quam veritatis
+              architecto animi aliquam.</p>
+
+            <!-- <p class="money"> <span id="result"> 100</span>€</p> -->
+            <input id="result" type="texte" value="5" maxlength="2" class="money" />
+            <div class="btnpricecontrole">
+              <button id="moins">-</button>
+              <button id="plus">+</button>
+            </div>
+
+         <button class="btnbasket">Ajouter au panier</button>
+          </figcaption>
+          
+
+        </div>
+      </figure>
+
+      <div id="confort2Modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img02">
+      </div>
+
+      <div id="surface1Modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img03">
+      </div>
+
+      <div id="surface2Modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img04">
+      </div>
+
+      <div id="decoration1Modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img05">
+      </div>
+
+      <div id="decoration2Modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img06">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <footer>
+      <div>
+        <p class="foot">ekea</p>
+        <a href="./contact.html">Nous contacter</a>
+      </div>
     </footer>
-  </body>
+  </footer>
+</body>
+
 </html>

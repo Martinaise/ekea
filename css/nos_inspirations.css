@@ -8,23 +8,6 @@ main h1 {
   font-family: "Oswald";
 }
 
-/* main p{
-    font-family: 'Oswald';
-    font-weight: 300;
-  } */
-
-/* .imageMain{
-  height: 200px;
-  width: 730px;
-  border-radius: 10px;
-  } */
-
-/* main img {
-    border: 2px solid black;
-    gap: 11%;
-    width: 300px;
-    height: 200px;
-  } */
 
 .image-main1 {
   flex-wrap: wrap;

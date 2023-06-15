@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+
+/* mettre la police sur ma page  */
+body{
+	font-family: 'Roboto', Arial, sans-serif;
+}
+
+
 header{
   justify-content: space-between;
   background-color: white;
